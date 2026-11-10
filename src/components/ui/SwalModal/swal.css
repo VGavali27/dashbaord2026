@@ -1,0 +1,119 @@
+/* Popup */
+
+.swal-popup {
+  width: 380px;
+  border-radius: 12px;
+  padding: 20px;
+  background: #fcfbf9;
+  color: #141415;
+  border: 1px solid #dedbd4;
+  box-shadow: 0 10px 30px rgba(15, 15, 16, 0.12);
+  font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+.dark .swal-popup {
+  background: #19191b;
+  color: #fafafa;
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+}
+
+.swal2-icon {
+  margin: 0.5em auto 0.6rem !important;
+}
+
+.swal2-title {
+  padding: 0em 1em 0;
+}
+
+/* Title */
+
+.swal-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #141415;
+}
+
+.dark .swal-title {
+  color: #fafafa;
+}
+
+/* Description */
+
+.swal-text {
+  color: #565149;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.dark .swal-text {
+  color: #a1a1a6;
+}
+
+/* Buttons */
+
+.swal-actions {
+  margin-top: 20px;
+  gap: 8px;
+}
+
+/* Confirm */
+
+.swal-confirm-btn {
+  background: #141415;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 160ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.swal-confirm-btn:hover {
+  background: #232325;
+}
+
+.dark .swal-confirm-btn {
+  background: #f2f1ee;
+  color: #141415;
+}
+
+.dark .swal-confirm-btn:hover {
+  background: #fcfbf9;
+}
+
+/* Cancel */
+
+.swal-cancel-btn {
+  background: #fcfbf9;
+  color: #403c36;
+  border: 1px solid #dedbd4;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 160ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.swal-cancel-btn:hover {
+  background: #eae8e3;
+}
+
+.dark .swal-cancel-btn {
+  background: #19191b;
+  color: #d4d4d8;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark .swal-cancel-btn:hover {
+  background: #232325;
+}
+
+/* Icon */
+
+.swal-icon {
+  transform: scale(0.85);
+}

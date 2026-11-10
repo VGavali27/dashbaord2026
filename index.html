@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <title>DashHub</title>
+    <script>
+      // Apply the saved theme before first paint so the app never flashes the
+      // wrong background on load or when the user returns to it.
+      (function () {
+        try {
+          var root = document.documentElement;
+          var saved = localStorage.getItem('theme');
+          var dark =
+            saved === 'dark' ||
+            (saved !== 'light' &&
+              window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+          root.classList.toggle('dark', dark);
+          root.style.colorScheme = dark ? 'dark' : 'light';
+
+          var size = parseInt(localStorage.getItem('fontSize'), 10);
+          if (size > 0) root.style.fontSize = size + 'px';
+        } catch (e) {
+          /* storage can be unavailable; fall back to the CSS default */
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
