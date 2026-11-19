@@ -29,7 +29,7 @@ const SwalModal = async (options = {}) => {
       actions: "flex gap-2 mt-5",
       confirmButton:
         confirmButtonClass ||
-        "bg-g-900 hover:bg-g-800 text-white dark:bg-g-50 dark:hover:bg-paper dark:text-g-900 px-4 py-2 rounded-lg text-sm font-medium transition-colors",
+        "bg-g-900 hover:bg-g-800 text-white dark:bg-g-50 dark:hover:bg-g-50/90 dark:text-g-900 px-4 py-2 rounded-lg text-sm font-medium transition-colors",
       cancelButton:
         cancelButtonClass ||
         "bg-paper hover:bg-g-100 text-g-700 dark:bg-g-850 dark:hover:bg-g-800 dark:text-g-300 border border-g-200 dark:border-white/10 px-4 py-2 rounded-lg text-sm font-medium transition-colors",

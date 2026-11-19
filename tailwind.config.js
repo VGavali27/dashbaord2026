@@ -1,3 +1,5 @@
+const withAlpha = (variable) => `rgb(var(${variable}) / <alpha-value>)`
+
 export default {
   content: [
     "./index.html",
@@ -6,33 +8,38 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Graphite ramp, warmed slightly at the light end so paper never glares
+        // Neutral ramp, tinted per theme through CSS variables
         g: {
-          50: '#f2f1ee',
-          100: '#eae8e3',
-          200: '#dedbd4',
-          300: '#c9c5bc',
-          400: '#9c978d',
-          500: '#726d64',
-          600: '#565149',
-          700: '#403c36',
-          800: '#232325',
-          850: '#19191b',
-          900: '#141415',
-          950: '#0f0f10',
+          50: withAlpha('--g-50'),
+          100: withAlpha('--g-100'),
+          200: withAlpha('--g-200'),
+          300: withAlpha('--g-300'),
+          400: withAlpha('--g-400'),
+          500: withAlpha('--g-500'),
+          600: withAlpha('--g-600'),
+          700: withAlpha('--g-700'),
+          800: withAlpha('--g-800'),
+          850: withAlpha('--g-850'),
+          900: withAlpha('--g-900'),
+          950: withAlpha('--g-950'),
         },
-        // Raised light surface: an off-white paper, not #fff
-        paper: '#fcfbf9',
-        // Single accent taken from the control-room world
+        paper: withAlpha('--paper'),
+        primary: {
+          DEFAULT: withAlpha('--primary'),
+          hover: withAlpha('--primary-hover'),
+        },
+        secondary: withAlpha('--secondary'),
+        highlight: withAlpha('--highlight'),
         accent: {
-          DEFAULT: '#d97706',
-          400: '#fbbf24',
-          500: '#f59e0b',
-          600: '#d97706',
-          700: '#b45309',
+          DEFAULT: withAlpha('--accent'),
+          400: withAlpha('--accent-400'),
+          500: withAlpha('--accent-500'),
+          600: withAlpha('--accent-600'),
+          700: withAlpha('--accent-700'),
         },
-        positive: '#16a34a',
-        negative: '#dc2626',
+        positive: withAlpha('--positive'),
+        warning: withAlpha('--warning'),
+        negative: withAlpha('--negative'),
       },
       fontFamily: {
         sans: ['var(--app-font)', 'sans-serif'],

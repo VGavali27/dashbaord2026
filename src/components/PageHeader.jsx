@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const actionVariants = {
 	primary:
-		'bg-g-900 text-white hover:bg-g-800 dark:bg-g-50 dark:text-g-900 dark:hover:bg-paper',
+		'bg-g-900 text-white hover:bg-g-800 dark:bg-g-50 dark:text-g-900 dark:hover:bg-g-50/90',
 	secondary:
 		'bg-paper dark:bg-g-850 text-g-700 dark:text-g-300 border border-g-200 dark:border-white/10 hover:bg-g-100 dark:hover:bg-g-800',
 }
@@ -57,7 +57,7 @@ export default function PageHeader({ title, subtitle, action, children, classNam
 	return (
 		<div className={`flex flex-wrap items-center justify-between gap-3 ${className}`.trim()}>
 			<div className="min-w-0">
-				<h1 className="text-[28px] sm:text-[32px] font-medium leading-[1.15] tracking-[-0.01em] text-g-900 dark:text-g-50">
+				<h1 className="text-[1.75rem] sm:text-[2rem] font-medium leading-[1.15] tracking-[-0.01em] text-g-900 dark:text-g-50">
 					{title}
 				</h1>
 				{subtitle && (

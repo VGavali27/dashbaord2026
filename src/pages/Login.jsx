@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext'
 import { Eye, EyeOff } from 'lucide-react'
 
 const inputClass =
-  'w-full px-3 py-2.5 border border-g-200 dark:border-white/10 rounded-lg bg-g-100 dark:bg-g-800 text-sm text-g-900 dark:text-g-100 placeholder-g-500 focus:outline-none focus:ring-2 focus:ring-accent-600/50 focus:border-accent-600 transition-colors'
+  'w-full h-11 px-3 border border-g-200 dark:border-white/10 rounded-lg bg-g-100 dark:bg-g-800 text-sm text-g-900 dark:text-g-100 placeholder-g-500 focus:outline-none focus:ring-2 focus:ring-accent-600/50 focus:border-accent-600 transition-colors'
 
 const labelClass = 'block text-sm font-medium text-g-700 dark:text-g-300 mb-1.5'
 
@@ -127,7 +127,7 @@ export default function Login() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-2.5 px-4 bg-g-900 hover:bg-g-800 dark:bg-g-50 dark:hover:bg-paper text-white dark:text-g-900 text-sm font-medium rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-600/60 focus-visible:ring-offset-2 focus-visible:ring-offset-g-50 dark:focus-visible:ring-offset-g-900"
+              className="w-full h-11 px-4 bg-g-900 hover:bg-g-800 dark:bg-g-50 dark:hover:bg-g-50/90 text-white dark:text-g-900 text-sm font-medium rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-600/60 focus-visible:ring-offset-2 focus-visible:ring-offset-g-50 dark:focus-visible:ring-offset-g-900"
             >
               {loading ? 'Signing in...' : 'Sign in'}
             </button>

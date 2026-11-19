@@ -95,7 +95,7 @@ export function Navbar({
                 aria-hidden="true"
                 className="h-4 w-[3px] rounded-full bg-accent-600 dark:bg-accent-500"
               />
-              <span className="text-[17px] font-semibold tracking-[-0.01em] text-g-900 dark:text-g-50">
+              <span className="text-[1.0625rem] font-semibold tracking-[-0.01em] text-g-900 dark:text-g-50">
                 DashHub
               </span>
             </div>
@@ -113,10 +113,10 @@ export function Navbar({
               />
 
               <span className="ml-3 hidden sm:flex items-center gap-1">
-                <kbd className="px-1.5 py-0.5 rounded border border-g-200 dark:border-white/10 bg-paper dark:bg-g-800 font-mono text-[11px] leading-4 text-g-500 dark:text-g-400">
+                <kbd className="px-1.5 py-0.5 rounded border border-g-200 dark:border-white/10 bg-paper dark:bg-g-800 font-mono text-[0.6875rem] leading-4 text-g-500 dark:text-g-400">
                   Ctrl
                 </kbd>
-                <kbd className="px-1.5 py-0.5 rounded border border-g-200 dark:border-white/10 bg-paper dark:bg-g-800 font-mono text-[11px] leading-4 text-g-500 dark:text-g-400">
+                <kbd className="px-1.5 py-0.5 rounded border border-g-200 dark:border-white/10 bg-paper dark:bg-g-800 font-mono text-[0.6875rem] leading-4 text-g-500 dark:text-g-400">
                   K
                 </kbd>
               </span>
@@ -165,7 +165,7 @@ export function Navbar({
                 className="flex items-center gap-2.5 px-1.5 py-1 rounded-lg hover:bg-g-100 dark:hover:bg-g-800 transition-colors"
                 aria-expanded={showProfile}
               >
-                <span className="w-8 h-8 rounded-full bg-g-100 dark:bg-g-800 border border-g-200 dark:border-white/10 flex items-center justify-center text-xs font-medium text-g-700 dark:text-g-200">
+                <span className="w-8 h-8 rounded-full bg-g-100 dark:bg-white/10 border border-g-200 dark:border-white/10 flex items-center justify-center text-xs font-medium text-g-700 dark:text-g-100">
                   {userName.charAt(0)}
                 </span>
 
